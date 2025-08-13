@@ -36,7 +36,7 @@ const OTPVerification: React.FC = () => {
   };
 
   const handleVerifyOtp = async () => {
-    if (!userId) {
+    if (!user?.userId) {
       toast.error(t("auth.userIdMissing"));
       return;
     }
