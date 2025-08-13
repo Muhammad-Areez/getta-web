@@ -42,13 +42,13 @@ export default defineConfig({
     port: 5173,
     strictPort: true,
     allowedHosts: ['getta-web.deployment-uat.com'],
-    proxy: {
-      '/api': {
-        target: 'https://getta-api-new.deployment-uat.com/api/v1/',
-        changeOrigin: true,
-        secure: false,
-        rewrite: (path) => path.replace(/^\/api/, ''),
-      },
-    },
+    // proxy: {
+    //   '/api': {
+    //     target: 'https://getta-api-new.deployment-uat.com/api/v1/',
+    //     changeOrigin: true,
+    //     secure: false,
+    //     rewrite: (path) => path.replace(/^\/api/, ''),
+    //   },
+    // },
   },
 });
